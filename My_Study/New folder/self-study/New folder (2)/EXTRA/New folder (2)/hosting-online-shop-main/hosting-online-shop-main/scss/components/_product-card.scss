@@ -1,0 +1,28 @@
+@import 'variable';
+@import 'mixin';
+
+.product-container{
+    @include pageSpaceing;
+    @include flexSize (1.5);
+    @include flexProp (flex,column);
+    .product-title{
+        @include flexProp (flex,row);
+        @include flex-item (space-between,center);
+        padding: 40px 0 40px 0;
+        font-size: 18px;
+        @import 'input-search';
+        .stort-item {
+            @include button;
+            padding: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            background-color:$btn-main;
+            color:white;
+        }
+        .stort-item:hover{
+            @include hover-zoom;
+            @include hover-color;
+        }
+    }
+    @import 'card';
+}

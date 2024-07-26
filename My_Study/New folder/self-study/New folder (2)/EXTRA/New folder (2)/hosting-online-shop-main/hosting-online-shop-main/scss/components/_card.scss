@@ -1,0 +1,70 @@
+@import 'variable';
+@import 'mixin';
+
+.product-card-contaier{
+    @include flexProp(flex,row);
+    flex-wrap: wrap;
+    .product-card{
+        width: 21%;
+        position: relative;
+        margin: 12px;
+        padding: 10px;
+        background-color:$font-color-w;
+        border-radius: 10px;
+        @include box-shadow;
+        .product-card-image{
+            padding: 18px;
+            img {
+                height: 40vh;
+            }
+        }
+        .product-card-text{
+            @include flexProp(flex,row);
+            @include flex-item (space-between,center);
+            h2{
+                font-size: 20px;
+            }
+            label{
+                font-size: 18px;
+                color: $btn_main;
+            }
+        }
+        .btn-card-container{
+            @include spacing(10px,0);
+            position: absolute;
+            top:0;
+            bottom:0;
+            right: 0;
+            left: 0;
+            transition: transform 0.5s;
+            .btn-card-buy{
+                margin-top: 70%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .btn-card-detail{
+                text-align: center;
+            }
+            button{
+                @include button {
+                    padding:12px;
+                    color: white;
+                }
+                width: 50%;
+            }
+            button:hover{
+                @include hover-color;
+            }
+            
+        }
+        .btn-card-container:hover{
+            transform: translateY(-20%)
+        }
+        .product-card-rating{
+            margin-top: 5px;
+            .checked{
+                color: orange;
+            }
+        }
+    }
+}

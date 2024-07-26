@@ -1,0 +1,31 @@
+
+button {
+    border:none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+#update {
+    background: rgb(66, 0, 128);
+    color: #fff;
+    border-radius: 40px;
+    padding: 3px 10px;
+}
+#add {
+    background: rgb(20, 173, 127);
+    color: #fff;
+    border-radius: 40px;
+    padding: 3px 10px;
+}
+.hide {
+    display: none;
+}

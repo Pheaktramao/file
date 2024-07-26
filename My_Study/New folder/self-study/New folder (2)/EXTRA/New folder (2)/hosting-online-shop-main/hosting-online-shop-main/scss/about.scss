@@ -1,0 +1,45 @@
+@import 'components/mixin';
+@import 'components/variable';
+
+* {
+    @include spacing(0, 0);
+}
+body {
+    @include body(125vh);
+    // --------responsive-------
+    @include responsiveSize(big) {
+        height: 170vh;
+    }
+    @include responsiveSize(small) {
+        height:100vh;
+    }
+}
+@import 'components/nav';
+// #nav-home{
+//     border-bottom: 2px solid $btn-main;
+// }
+main {
+    @include flexProp(flex,column);
+    @include flexSize(1);
+    margin-top: 6%  ;
+    .discount{
+        background-color: $btn-main;
+        flex: 1;
+        padding: 30px;
+        @include flexProp(flex,row);
+        @include flex-item(center,center);
+        font-size: 18px;
+        color: white;
+    
+    }
+   
+    .product-container .product-title{
+        @include flex-item (center,center);
+    }
+    
+}
+#nav-about{
+    border-bottom: 2px solid $btn-main;
+}
+@import 'components/service';
+@import 'components/footer';

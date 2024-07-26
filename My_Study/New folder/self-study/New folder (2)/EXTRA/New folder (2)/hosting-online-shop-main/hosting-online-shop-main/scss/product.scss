@@ -1,0 +1,65 @@
+@import 'components/mixin';
+@import 'components/variable';
+
+* {
+    @include spacing(0, 0);
+}
+body {
+    @include body(auto);
+    // --------responsive-------
+    @include responsiveSize(big) {
+        height: 170vh;
+    }
+    @include responsiveSize(small) {
+        // height:100vh;
+    }
+}
+@import 'components/nav';
+#nav-product{
+    // -webkit-transform: rotate(45deg);
+    // -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 2px solid $btn-main;
+}
+main {
+    margin-top: 6%;
+    .more-product{
+        @include flexProp (flex,column);
+        @include flex-item (center,center);
+        margin: 15px;
+        button{
+            @include button;
+            padding: 15px;
+            color: white;
+        }
+        button:hover{
+            @include hover-color;
+        }
+    }
+    .undefind-container{
+        @include spacing(20px,0);
+        text-align: center;
+        color: rgb(68, 68, 68);
+    }
+    .short-container{
+        margin-bottom: 20px;
+        #short-product{
+            @include button;
+            color: black;
+            padding: 10px;
+            background-color: white;
+            font-size: 15px;
+            border:none;
+        }
+        #short-product:hover{
+            @include hover-color;
+        }
+    }
+}
+@import 'components/discount';
+@import 'components/product-card';
+@import 'components/detail';
+@import 'components/table';
+@import 'components/form-login';
+@import 'components/credit_card';
+@import 'components/footer';

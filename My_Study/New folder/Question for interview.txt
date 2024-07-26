@@ -1,0 +1,69 @@
+				Question for interview
++Technical Questions
+Programming Languages:
+
+What programming languages are you most proficient in?
+Can you explain the difference between statically and dynamically typed languages?
+Data Structures and Algorithms:
+
+How would you implement a binary search algorithm?
+Can you explain the difference between a stack and a queue?
+What are the time complexities of common sorting algorithms?
++Software Design:
+
+What is object-oriented programming (OOP) and what are its main principles?
+Can you explain design patterns you have used in your projects?
+How do you approach designing scalable and maintainable software?
++Database Management:
+
+What is the difference between SQL and NoSQL databases?
+How do you normalize a database schema?
+Can you write a SQL query to find duplicate records in a table?
++Web Development:
+
+What are RESTful APIs and how do you design one?
+Can you explain the differences between front-end and back-end development?
+How do you handle authentication and authorization in web applications?
++Mobile Development:
+
+What are the main differences between developing for iOS and Android?
+How do you manage state in a mobile application?
+Can you explain the MVC (Model-View-Controller) pattern and its application in mobile development?
+Behavioral Questions
++Project Management:
+
+Can you describe a project where you had to meet tight deadlines? How did you handle it?
+How do you prioritize tasks when working on multiple projects simultaneously?
++Problem-Solving:
+
+Can you provide an example of a challenging bug you encountered and how you resolved it?
+How do you approach debugging a complex application?
++Team Collaboration:
+
+How do you ensure effective communication within your development team?
+Can you describe a time when you had to work with a difficult team member? How did you handle it?
+Practical Exercises
++Coding Challenge:
+
+Write a function to reverse a linked list.
+Given an array of integers, find the two numbers that add up to a specific target.
++System Design:
+
+Design a URL shortening service (like bit.ly). What components would you use and why?
+How would you design a system to handle millions of requests per second?
+Scenario-Based Questions
++Version Control:
+
+How do you handle merge conflicts in Git?
+Can you describe your branching strategy in your previous projects?
+Continuous Integration/Continuous Deployment (CI/CD):
+
+What tools and practices do you use for CI/CD?
+How do you ensure that your code is properly tested before deployment?
+These questions cover a broad range of topics that are likely to be relevant for an application developer position. Preparing answers for these questions will help demonstrate your technical expertise and problem-solving abilities.
+
+
+
+
+
+

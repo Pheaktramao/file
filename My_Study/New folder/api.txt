@@ -1,0 +1,5 @@
+1.getAllTasks
+2.get specific data
+3.create new task
+4.delete task
+5.update task

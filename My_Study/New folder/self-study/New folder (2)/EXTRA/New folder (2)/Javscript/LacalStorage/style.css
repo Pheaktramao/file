@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+#student-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    margin: 5px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    background: blue;
+}

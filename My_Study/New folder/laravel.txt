@@ -1,0 +1,4 @@
+composer create-project laravel/laravel:^10.0 example-app install laravel
+
+php artisan serve to run laravel
+

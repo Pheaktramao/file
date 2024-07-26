@@ -1,0 +1,20 @@
+Using Resource: To manage respond all data that get
+list($data is array)
+NameResource::collection(data);
+
+Get Specific
+new Name_resource(data);
+
+The three parts of the MVC software-design pattern can be described as follows:
+
+1.Model: Manages data and business logic.(a way for querying data to and from the table in the database.)
+2.View: Handles layout and display.(front-end)
+3.Controller: Routes commands to the model and view parts.(handle process.)
+
++Create view in laravel
+php artisan make:view greeting
+
++end-point: {{url}}/...
++method
++Request/response
+{}

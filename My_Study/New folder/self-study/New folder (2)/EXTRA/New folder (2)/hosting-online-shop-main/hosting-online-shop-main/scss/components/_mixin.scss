@@ -1,0 +1,125 @@
+@use 'sass:map';
+$breakPoints: (
+    verysmall:400px,
+    small: 670px,
+    medium: 760px,
+    big:900px,
+);
+@import'variable';
+
+@mixin flexSize($size) {
+    flex: $size;
+}
+
+@mixin flexBasis($size) {
+    flex-basis: $size;
+
+}
+
+@mixin spacing($p, $m) {
+    padding: $p;
+    margin: $m;
+
+}
+
+@mixin body ($h) {
+    font-family: $font-style;
+    height: $h;
+    display: flex;
+    flex-direction: column;
+    background-color: $body_background;
+
+    @include responsiveSize(big) {
+        height: 170vh;
+    }
+
+    @content;
+}
+
+@mixin flexProp ($f, $r-c) {
+    display: $f;
+    flex-direction: $r-c ;
+    @content;
+}
+
+@mixin flex-item($jc, $ac) {
+    justify-content: $jc;
+    align-items: $ac;
+    @content;
+}
+
+@mixin hover-color {
+    box-shadow: inset 150px 0 0 0 #086d48;
+    cursor: pointer;
+    background:none;
+}
+
+@mixin hover-zoom {
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+@mixin hover-style {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    margin: 0 -.25rem;
+    padding: 20 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+}
+
+@mixin box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+// @media query with difference screen
+@mixin responsiveSize($key) {
+    $size: map.get($breakPoints, $key);
+
+    @media(max-width:$size) {
+        @content;
+    }
+}
+
+@mixin pageSpaceing {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+@mixin btn {
+    padding: 20px;
+    border: none;
+    background-color: $btn_main;
+    color: white;
+    border-radius: 10px;
+    @content;
+}
+
+@mixin button {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    background: $btn_main;
+    border-radius: $border-radius;
+    color: white;
+    @content;
+
+    a {
+        color: $font-color-w;
+        text-decoration: none;
+    }
+}
+@mixin  input{
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: $border-radius;
+    border:solid 1px black;
+    outline: none;
+    margin-bottom:20px;
+}

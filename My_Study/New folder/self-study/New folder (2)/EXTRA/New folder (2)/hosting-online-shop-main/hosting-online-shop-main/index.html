@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../image/icon-web.png">
+    <link rel="stylesheet" href="css/home.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="image-container">
+                <img src="image/logo-nav-nobg.png" alt="" width="10%">
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#" id="nav-home">Home</a></li>
+                <li><a href="pages/product.html">Product</a></li>
+                <li><a href="pages/seller.html">Seller</a></li>
+                <li><a href="pages/about.html">About us</a></li>
+                <li><a href="pages/login.html">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="banner-container">
+            <div class="banner">
+                <div class="title">
+                    <h1>Sale 20% Off <br> Everything</h1>
+                </div>
+                <div class="banner-text">
+                    <p>Explicabo esse amet tempora quibusdam laudantium, laborum <br> eaque magnam fugiat hic? Esse
+                        dicta aliquid error repudiandae <br> earum suscipit fugiat molestias, veniam, vel architecto
+                        veritatis <br> delectus repellat modi impedit sequi.</p>
+                </div>
+                <div class="banner-btn">
+                    <a href="pages/product.html"><button>Show Now</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="service-container">
+            <div class="service-title">
+                <h2>Why Shop With Us</h2>
+            </div>
+            <div class="service-card-container">
+                <div class="service-card">
+                    <i class='fas fa-shipping-fast'></i>
+                    <h3>Fast Delivery</h3>
+                    <span>ariations of passages of Lorem <br> Ipsum available</span>
+                </div>
+                <div class="service-card">
+                    <i class='fas fa-shopping-cart'></i>
+                    <h3>Free Shiping</h3>
+                    <span>ariations of passages of Lorem <br>Ipsum available</span>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Best Quality</h3>
+                    <span>ariations of passages of Lorem <br>Ipsum available</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-title">
+                <h1>Best Products</h1>
+            </div>
+            <div class="product-card-contaier">
+
+            </div>
+        </div>
+        <div id="product-dialog" style="display:none;">
+            <dialog open>
+                <div id="image_container">
+                    <div class="big_image">
+                        <img alt="">
+                    </div>
+                </div>
+                <div id="detail_comtainer">
+                    <div class="cancel">
+                        <i class="fa fa-close"></i>
+                    </div>
+                    <div class="product_name">
+                        <h2></h2>
+                    </div>
+                    <div class="product_ratting">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="product_currency">
+                        <span></span>
+                    </div>
+                    <div class="product_desciption">
+                        <span></span>
+                    </div>
+                    <div class="product_price">
+                        <label>Price: $26</label>
+                    </div>
+                    <menu>
+                        <button onclick="add_card()">Add to Cart <i class='fas fa-cart-plus'></i></button>
+                        <button id="buy-on-detail" type="button">Buy Now <i class="fa fa-shopping-cart"></i></button>
+                    </menu>
+                </div>
+
+            </dialog>
+        </div>
+        <div id="credit-card" style="display:none;">
+            <dialog open>
+                <main>
+                    <aside class="sidebar-left">
+                        <div class="content-left">
+                            <div class="content-left-text">
+                                <div class="title-left">
+                                    <h1>Product Informatin</h1>
+                                </div>
+                                <div class="credit-title">
+                                    <h1>T-shirt</h1>
+                                </div>
+                                <div class="product-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="quantity-container">
+                                    <span>Quantity</span>
+                                    <select id="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="5">4</option>
+                                        <option value="6">5</option>
+                                    </select>
+                                </div>
+                                <div class="total-price-container">
+                                    <span>Commission</span>
+                                    <span></span>
+                                </div>
+                                <div class="total-price-container" id="total">
+                                    <span>Total</span>
+                                    <span></span>
+                                </div>
+                                <div class="ratting-title">
+                                    <label>Ratting us</label>
+                                </div>
+                                <div class="ratting-stars">
+                                    <span class="fa fa-star" data-index="1"></span>
+                                    <span class="fa fa-star" data-index="2"></span>
+                                    <span class="fa fa-star" data-index="3"></span>
+                                    <span class="fa fa-star" data-index="4"></span>
+                                    <span class="fa fa-star" data-index="5"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="sidebar-right">
+                        <form id="credit-form" action="#">
+                            <div class="title-right">
+                                <h1>Payment</h1>
+                                <i class="fa fa-close" id="payment-cacel"></i>
+                            </div>
+                            <div class="payment-image">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <div class="check-out-user">
+                                <label>Your contect</label>
+                                <input type="text" required id="gmail-check-out" placeholder="Gmail or Number phone">
+                            </div>
+                            <div class="check-out-user">
+                                <label>Location</label>
+                                <input type="text" required id="location-check-out"
+                                    placeholder="City / province / street">
+                            </div>
+                            <div class="name-content">
+                                <div class="name">
+                                    <label>Name on Card</label>
+                                    <input type="text" required id="name-check-out" placeholder="John More Doe"
+                                        minlength="5" maxlength="20">
+                                </div>
+                            </div>
+                            <div class="number-card-content">
+                                <label>Credit card number</label>
+                                <input type="number" required id="number-check-out" placeholder="1111-2222-3333-4444"
+                                    maxlength="16">
+                            </div>
+                            <div class="exp-content">
+                                <div class="exp">
+                                    <label>Exp Year/month</label>
+                                    <input type="month" id="year-check-out" required minlength="4"
+                                        placeholder="02/2027">
+                                </div>
+                                <div class="exp">
+                                    <label>CVV</label>
+                                    <input type="password" id="cvv-check-out" required placeholder="352" maxlength="3">
+                                </div>
+                            </div>
+                            <div class="submit-content">
+                                <button type="button" id="make-payment">Make payment</button>
+                            </div>
+                        </form>
+                    </aside>
+                </main>
+            </dialog>
+        </div>
+        <div class="more-product">
+            <div class="btn-more">
+                <a href="pages/product.html"><button>View All Product</button></a>
+            </div>
+        </div>
+    </main>
+    <div class="infomation">
+        <div class="follow-us">
+            <h2>Follow us</h2> <br>
+            <p>Customer Service:</p>
+            <p>+855-965792680</p>
+        </div>
+        <div class="compnay">
+            <h2>About us</h2><br>
+            <p>Fast Delivery</p>
+            <p>Free Shiping</p>
+            <p>Best Quality</p>
+        </div>
+        <div class="explore">
+            <h2>Explore</h2><br>
+            <p>New product</p>
+            <p>All product</p>
+            <p>Contect us</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <h3>FREEDOM TO SHOPING</h3>
+        </div>
+        <div class="contact-media">
+            <i><a href="#" class="fa fa-facebook"></a></i>
+            <i><a href="#" class="fa fa-twitter"></a></i>
+            <i><a href="#" class="fa fa-google"></a></i>
+            <i><a href="#" class="fa fa-linkedin"></a></i>
+            <i><a href="#" class="fa fa-youtube"></a></i>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

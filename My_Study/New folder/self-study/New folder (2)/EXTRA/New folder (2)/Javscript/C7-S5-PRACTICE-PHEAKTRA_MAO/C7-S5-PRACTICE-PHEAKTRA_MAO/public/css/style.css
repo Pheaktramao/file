@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    flex: 1;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav-left {
+    margin-left: 10px;
+}
+
+img {
+    width: 150px;
+}
+
+.nav-right,
+.nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.nav-right>ul>li>a:hover {
+    padding: 20px;
+    background: orange;
+    color: white;
+}
+
+.nav-right ul li {
+    list-style: none;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header {
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Image/Friend.jpg);
+    background-size: cover;
+    background-position: 10px;
+    gap: 20px;
+}
+
+.topics {
+    width: 60%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.315);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    color: white;
+}
+
+.topics>p {
+    margin-top: 30px;
+    border-top: 1px solid white;
+    text-align: center;
+    font-size: 23px;
+}
+
+.topics>h1 {
+    text-align: left;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.Values {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 60px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.group-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 25%;
+    height: 45vh;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.card:nth-child(4) {
+    margin-left: 200px;
+}
+
+.card:nth-child(5) {
+    margin-right: 200px;
+}
+
+.img-card>img {
+    width: 100px;
+}
+
+.paragraph {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    padding: 10px;
+    gap: 20px;
+}
+
+.paragraph>p {
+    text-align: center;
+    text-align: center;
+}
+
+.paragraph>span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Canteen {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+table {
+    margin-top: 50px;
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background: orangered;
+}
+
+td {
+    text-align: center;
+}
+
+th,
+td {
+    height: 50px;
+}
+
+th {
+    border-right: 1px solid teal;
+}
+
+th:nth-child(6) {
+    border-right: none;
+}
+
+td {
+    border: 1px solid teal;
+}
+
+.food {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.food-card {
+    width: 300px;
+    height: 45vh;
+    background: orangered;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+}
+
+.food-card>h4 {
+    text-align: center;
+    margin: auto;
+}
+
+.food-card>img {
+    width: 300px;
+    height: 40vh;
+    border-radius: 20px 20px 0 0;
+}
+
+.sport {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.sport-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sport-card {
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.sport-card>h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.sport-card>img {
+    width: 100%;
+    height: 48vh;
+}
+
+.aerobics {
+    flex: 1;
+    margin-top: 100px;
+}
+
+.aerobics-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aerobics-card {
+    width: 30%;
+}
+
+.aerobics-group .aerobics-card img {
+    width: 400px;
+    height: 40vh;
+    border: 1px solid orange;
+}
+
+.Contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    height: 100vh;
+    background-image: url(../Image/PNC.jpg);
+    background-size: cover;
+    background-position: 10;
+}
+
+form {
+    width: 40%;
+    height: 75vh;
+    background:  rgba(0, 128, 128, 0.479);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.username {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.email,
+.message {
+    width: 100%;
+    margin: 5px;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+input[type="email"] {
+    width: 90%;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.detail {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail>h1 {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.detail>h1,
+.detail>ul {
+    margin-left: 20px;
+}
+
+.detail>ul>li {
+    list-style: none;
+}
+
+.footer {
+    height: 30vh;
+    background: orangered;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer>.value>ul>li,
+.footer>.majors>ul>li,
+.footer>.departments>ul>li,
+.footer>.social>ul>li {
+    list-style: none;
+    font-size: 20px;
+}
+@media (max-width: 800px){
+    .nav-left{
+        flex: 0.5;
+    }
+    .nav-right{
+        flex: 1.5;
+    }
+    
+
+    .nav-right>ul>li>a:hover {
+        padding: 20px;
+        background: orange;
+        color: white;
+    }
+    
+    .nav-right ul li {
+        list-style: none;
+    }
+    
+    .nav-right ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+    
+    .header {
+        height: 80vh;
+    }
+    
+    .topics {
+        width: 60%;
+        height: 60vh;
+    }
+    
+    .topics>p {
+        margin-top: 0px;
+        font-size: 10px;
+    }
+    
+    .topics>h1 {
+        font-size: 30px;
+    }
+    
+    .Values {
+        gap: 30px;
+    }
+    
+    .card {
+        width: 45%;
+        height: 60vh;
+    }
+    .card:nth-child(4){
+        margin-left: 0px;
+    }
+    .card:nth-child(5) {
+        margin-right: 0px;
+    }
+    
+    .img-card>img {
+        width: 60px;
+    }
+
+
+    table {
+        width: 90%;
+    }
+    
+   
+    .food {
+        flex-wrap: wrap;
+
+    }
+    
+    .food-card {
+        height: 65vh;
+    }
+    
+    .food-card>h4 {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .food-card>img {
+        height: 50vh;
+    }
+    
+
+    .sport-group {
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .sport-card {
+        width: 45%;
+        height: 50vh;
+    }
+    
+    .sport-card>h3 {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .sport-card>img {
+        width: 80%;
+        height: 50vh;
+    }
+    
+
+    .aerobics-card {
+        width: 45%;
+        margin-left: 40px;
+    }
+    
+    .aerobics-group .aerobics-card img {
+        width: 250px;
+
+    }
+    
+
+    form {
+        height: 70vh;
+
+    }
+    
+
+    .detail>ul>li {
+        list-style: none;
+    }
+    
+    .footer {
+        height: 40vh;
+    }
+}
+
+@media (max-width:430px){
+    .container{
+        margin-left: auto;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-right{
+        flex: 1;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    
+    .header {
+        height: 70vh;
+        width: 100%;
+    }
+    
+    .topics {
+        width: 80%;
+        height: 60vh;
+    }
+    .group-card{
+        margin-left: 30px;
+    }
+    .card {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .img-card>img {
+        width: 60px;
+    }
+
+
+    table {
+        width: 100%;
+        height: 30px;
+    }
+    
+   
+    .food {
+        flex-wrap: wrap;
+
+    }
+    
+    .food-card {
+        width: 100%;
+        height: 65vh;
+    }
+    
+    .food-card>h4 {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .food-card>img {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .sport-card {
+        width: 100%;
+        height: 50vh;
+    }
+    .sport-card>img {
+        width: 80%;
+        height: 50vh;
+        margin-left: auto;
+    }
+    
+
+    .aerobics-card {
+        width: 100%;
+        margin-left: 40px;
+    }
+    
+    .aerobics-group .aerobics-card img {
+        width: 100%;
+        height: 60vh;
+
+    }
+    form {
+        height: 60vh;
+
+    }
+    .detail>ul>li {
+        list-style: none;
+    }
+    
+    .footer {
+        height: 100vh;
+    }
+}

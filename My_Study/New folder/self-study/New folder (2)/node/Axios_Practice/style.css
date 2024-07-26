@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.cardDiv{
+    width: 50%;
+    border: 1px solid black;
+}
+.card-header{
+    border: 1px solid black;
+}
